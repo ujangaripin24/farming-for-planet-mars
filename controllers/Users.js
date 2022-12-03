@@ -77,6 +77,22 @@ export const updateUser = async(req, res) => {
     }
 }
 
-export const deleteUser = (req, res) => {
-    
+export const deleteUser = async (req, res) => {
+    const user = await User.findOne({
+        where: {
+            uuid: req.params.id,
+        }
+    });
+    if (!user) return res.status(400).json({ message: "Password does not match" });
+    try {
+        await User.destroy({
+            where :{
+                id : user.id
+            }
+        }
+        );
+        res.status(201).json({ message: "User telah di hapus" });
+    } catch {
+        res.status(400).json(error);
+    }
 }
