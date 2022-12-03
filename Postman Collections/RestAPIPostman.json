@@ -12,7 +12,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -23,7 +23,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:5000/login",
+				"url": "http://localhost:5000/status",
 				"description": "login telah berhasil"
 			},
 			"response": []
