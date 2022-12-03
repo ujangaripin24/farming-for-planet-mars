@@ -171,7 +171,7 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "title",
+							"key": "name",
 							"value": "product 1",
 							"type": "text"
 						},
@@ -181,7 +181,7 @@
 							"type": "text"
 						},
 						{
-							"key": "file",
+							"key": "image",
 							"type": "file",
 							"value": null
 						},
