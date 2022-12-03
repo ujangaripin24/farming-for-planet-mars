@@ -143,6 +143,20 @@
 				"description": "delete menunjukan respon dari router tidak berjalan baik [error]"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:5000/products",
+			"id": "5302de71-d3ce-4d0c-b17c-507efc005792",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/products",
+				"description": "request pada product direspon menampilkan \"[]\" berarti req, res product berhasil"
+			},
+			"response": []
 		}
 	]
 }
