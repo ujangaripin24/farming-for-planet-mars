@@ -19,3 +19,17 @@ GET http://localhost:5000/users
 #3. get one user
 ###
 GET http://localhost:5000/user/823fac1f-d5d1-4152-8025-e46223028ef4
+
+#3. get one user
+###
+PATCH  http://localhost:5000/user/823fac1f-d5d1-4152-8025-e46223028ef4
+Content-Type: application/json
+
+{
+    "name": "Ujang Aripin (Admin)", 
+    "email": "ujangarifin06@gmail.com", 
+    "password": "123456", 
+    "confPassword": "123456", 
+    "number": "0812345678", 
+    "role": "admin"
+}

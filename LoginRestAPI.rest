@@ -1,0 +1,18 @@
+#1. login
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "ujangarifin06@gmail.com",
+    "password" : "123456"
+}
+
+#2. Status
+###
+GET http://localhost:5000/status
+
+
+#3. logout
+###
+DELETE http://localhost:5000/logout
