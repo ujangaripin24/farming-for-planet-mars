@@ -4,12 +4,12 @@ POST http://localhost:5000/user
 Content-Type: application/json
 
 {
-    "name": "Ujang Aripin", 
-    "email": "ujangarifin06@gmail.com", 
+    "name": "Abraham James", 
+    "email": "fitriafirgantari@gmail.com", 
     "password": "123456", 
     "confPassword": "123456", 
     "number": "0812345678", 
-    "role": "admin"
+    "role": "user"
 }
 
 #2. get all user
@@ -18,15 +18,15 @@ GET http://localhost:5000/users
 
 #3. get one user
 ###
-GET http://localhost:5000/user/823fac1f-d5d1-4152-8025-e46223028ef4
+GET http://localhost:5000/user/ca3faa0c-efb5-46e1-9b21-68f998a40c80
 
-#3. get one user
+#3. get edit user
 ###
 PATCH  http://localhost:5000/user/823fac1f-d5d1-4152-8025-e46223028ef4
 Content-Type: application/json
 
 {
-    "name": "Ujang Aripin (Admin)", 
+    "name": "Fitria Firgantari", 
     "email": "ujangarifin06@gmail.com", 
     "password": "123456", 
     "confPassword": "123456", 

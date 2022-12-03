@@ -1,0 +1,3 @@
+#1. get all product
+###
+GET http://localhost:5000/products

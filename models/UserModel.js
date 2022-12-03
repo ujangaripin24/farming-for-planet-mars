@@ -36,7 +36,7 @@ const User = db.define('users', {
         }
     },
     number: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
         validate: {
             notNull: true,
