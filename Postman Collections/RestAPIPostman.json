@@ -92,6 +92,20 @@
 				"description": "jika tanpa user tidak login request di tolak.\njika user login sebagai \"user\" data ditampilkan berdasarkan user.\njika user  login sebagai \"admin\" seluruh data tampil"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/ca3faa0c-efb5-46e1-9b21-68f998a40c80",
+			"id": "0fb337e6-96e1-46e7-92d7-2e57f7821a09",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/user/ca3faa0c-efb5-46e1-9b21-68f998a40c80",
+				"description": "data tampil berdasarkan uuid yang dipilih oleh \"admin\" atau \"user\""
+			},
+			"response": []
 		}
 	]
 }
