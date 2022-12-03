@@ -78,6 +78,20 @@
 				"description": "registrasi user baru"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:5000/users",
+			"id": "5000bcd0-8d61-405e-8ba8-0f9e7ef052dc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/users",
+				"description": "jika tanpa user tidak login request di tolak.\njika user login sebagai \"user\" data ditampilkan berdasarkan user.\njika user  login sebagai \"admin\" seluruh data tampil"
+			},
+			"response": []
 		}
 	]
 }
