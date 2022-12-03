@@ -157,6 +157,45 @@
 				"description": "request pada product direspon menampilkan \"[]\" berarti req, res product berhasil"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:5000/product",
+			"id": "a99fda66-ba85-459d-802c-d045d5c7f2ea",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "product 1",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "10000",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/pratiwi/Pictures/Screenshot/screen03.jpg"
+						},
+						{
+							"key": "stock",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:5000/product",
+				"description": "menambahkan data 'error' dari middleware AuthUser.js"
+			},
+			"response": []
 		}
 	]
 }
