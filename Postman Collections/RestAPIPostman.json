@@ -129,6 +129,20 @@
 				"description": "data tampil berdasarkan uuid yang dipilih oleh \"admin\" atau \"user\""
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/c69a091b-ae89-41bd-a685-dd8d908139d3",
+			"id": "c2f0c2f5-d9c5-49b3-8772-3581b4a3f037",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/user/c69a091b-ae89-41bd-a685-dd8d908139d3",
+				"description": "delete menunjukan respon dari router tidak berjalan baik [error]"
+			},
+			"response": []
 		}
 	]
 }
