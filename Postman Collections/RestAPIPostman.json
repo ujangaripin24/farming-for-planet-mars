@@ -140,7 +140,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": "http://localhost:5000/user/c69a091b-ae89-41bd-a685-dd8d908139d3",
-				"description": "delete menunjukan respon dari router tidak berjalan baik [error]"
+				"description": "delete user oleh \"admin\" telah berhasil"
 			},
 			"response": []
 		},
