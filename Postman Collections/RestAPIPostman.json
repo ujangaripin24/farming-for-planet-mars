@@ -108,7 +108,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:5000/user/ca3faa0c-efb5-46e1-9b21-68f998a40c80 Copy",
+			"name": "http://localhost:5000/user/ca3faa0c-efb5-46e1-9b21-68f998a40c80",
 			"id": "7533cc41-97b5-419b-98d0-1e8091a0ea18",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
