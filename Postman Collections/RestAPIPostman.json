@@ -27,6 +27,20 @@
 				"description": "login telah berhasil"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:5000/status",
+			"id": "cf61c099-0a76-43a5-a989-9206ca867c3c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/status",
+				"description": "status untuk user login"
+			},
+			"response": []
 		}
 	]
 }
