@@ -126,7 +126,7 @@
 					}
 				},
 				"url": "http://localhost:5000/user/ca3faa0c-efb5-46e1-9b21-68f998a40c80",
-				"description": "data tampil berdasarkan uuid yang dipilih oleh \"admin\" atau \"user\""
+				"description": "data berhasil dihapus oleh admin"
 			},
 			"response": []
 		},
