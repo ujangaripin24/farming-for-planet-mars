@@ -41,6 +41,20 @@
 				"description": "status untuk user login"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:5000/logout",
+			"id": "eca0a123-057a-4373-ba7f-7e799cf65db6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/logout",
+				"description": "logout untuk user telah berhasil"
+			},
+			"response": []
 		}
 	]
 }
