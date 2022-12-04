@@ -72,7 +72,7 @@ export const createProduct = (req, res) => {
     if(req.files === null) return res.status(400).json({msg: "No File Uploaded"});
     const {
         price = req.body.price,
-        name = req.body.name,
+        name = req.body.title,
         file = req.files.file,
         fileSize = file.data.length,
         ext = path.extname(file.name),

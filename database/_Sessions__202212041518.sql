@@ -1,0 +1,6 @@
+INSERT INTO public."Sessions" (sid,expires,"data","createdAt","updatedAt") VALUES
+	 ('zauO6EahNyYyuOkU6hzrDt-YslRG6VHg','2022-12-04 21:05:38.827+07','{"cookie":{"originalMaxAge":null,"expires":null,"secure":false,"httpOnly":true,"path":"/"}}','2022-12-03 21:05:38.87+07','2022-12-03 21:05:38.87+07'),
+	 ('EqBhdOH0UivfhsNIMNlkGcF1sDmEjG2i','2022-12-05 12:05:49.3+07','{"cookie":{"originalMaxAge":null,"expires":null,"secure":false,"httpOnly":true,"path":"/"},"userId":"823fac1f-d5d1-4152-8025-e46223028ef4"}','2022-12-04 10:55:45.061+07','2022-12-04 12:05:49.304+07'),
+	 ('XIoX0_BJnaf8zs5HraU0YgHEoUU3jydM','2022-12-04 23:19:54.328+07','{"cookie":{"originalMaxAge":null,"expires":null,"secure":false,"httpOnly":true,"path":"/"},"userId":"823fac1f-d5d1-4152-8025-e46223028ef4"}','2022-12-03 21:35:07.526+07','2022-12-03 23:19:54.329+07'),
+	 ('OGDBAawBapYKyPnpMLUlfA3m1aYDc3g5','2022-12-05 15:09:31.777+07','{"cookie":{"originalMaxAge":null,"expires":null,"secure":false,"httpOnly":true,"path":"/"},"userId":"823fac1f-d5d1-4152-8025-e46223028ef4"}','2022-12-04 14:14:01.368+07','2022-12-04 15:09:31.787+07'),
+	 ('1AuqstEBEuyO-zOy2ZLIBjOKvond-bsZ','2022-12-04 23:43:51.059+07','{"cookie":{"originalMaxAge":null,"expires":null,"secure":false,"httpOnly":true,"path":"/"}}','2022-12-03 23:43:51.429+07','2022-12-03 23:43:51.429+07');
