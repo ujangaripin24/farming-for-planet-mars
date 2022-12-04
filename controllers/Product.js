@@ -38,12 +38,10 @@ export const getProductById = async (req, res) => {
                 uuid: req.params.id
             }
         });
-        if(!product){
-            return res.status(404).json({msg: "product tidak ditemukan"});
-        }
+        if(!product) return res.status(404).json({msg: "product tidak ditemukan"});
         let response;
         if(req.role === "admin"){
-            response = await Product.findAll({
+            response = await Product.findOne({
                 attributes: ['uuid', 'name', 'price', 'url'],
                 where:{
                    id: product.id
@@ -54,12 +52,13 @@ export const getProductById = async (req, res) => {
                 }]
             });
         } else {
-            response = await Product.findAll({
+            response = await Product.findOne({
                 where:{
-                    [Op.and]: [{userId : req.userId}, {id: product.id}],
+                    [Op.and]: [{id: product.id}, {userId : req.userId}],
                 },
                 include:[{
                     model: User,
+                    attributes: ['name', 'email', 'role']
                 }]
             });
         }
@@ -73,7 +72,7 @@ export const createProduct = (req, res) => {
     if(req.files === null) return res.status(400).json({msg: "No File Uploaded"});
     const {
         price = req.body.price,
-        name = req.body.title,
+        name = req.body.name,
         file = req.files.file,
         fileSize = file.data.length,
         ext = path.extname(file.name),
@@ -95,12 +94,12 @@ export const createProduct = (req, res) => {
                 url: url,
                 userId: req.userId
             });
-            res.status(201).json({msg: "Product Created Successfuly"});
+            res.status(200).json({msg: "Product Created Successfuly"});
         } catch (error) {
             console.log(error.message);
         }
-    });
-}
+    })
+};
 
 export const updateProduct = (req, res) => {
     
