@@ -196,6 +196,20 @@
 				"description": "menambahkan data 'error' dari middleware AuthUser.js"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:5000/product/75afcaa2-b25d-4d69-b98a-0727b231c964",
+			"id": "5408e732-9a39-4801-a2be-a8bd2f24c273",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/product/75afcaa2-b25d-4d69-b98a-0727b231c964",
+				"description": "produk ditampilkan berdasarkan uuid yang dipilih"
+			},
+			"response": []
 		}
 	]
 }
