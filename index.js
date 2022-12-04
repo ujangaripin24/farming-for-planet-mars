@@ -24,7 +24,7 @@ const store = new sessionStore({
 // })();
 
 app.use(session({
-    secret: process.env.SESS_SECRET,
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
     store: store,
@@ -40,8 +40,9 @@ app.use(express.json());
 app.use(UserRoute);
 app.use(ProductRoute);
 app.use(AuthRoute);
+
 // store.sync();
 
-app.listen(process.env.APP_PORT, ()=>{
-    console.log('Server Berjalan Pada Port 5000');
-});
+app.listen(process.env.APP_PORT,() => {
+    console.log("Express Berjalan Pada 5000");
+  });
