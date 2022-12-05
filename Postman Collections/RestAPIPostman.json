@@ -183,7 +183,7 @@
 						{
 							"key": "image",
 							"type": "file",
-							"src": "/home/pratiwi/Downloads/ionic.png"
+							"value": null
 						},
 						{
 							"key": "stock",
