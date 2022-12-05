@@ -210,6 +210,20 @@
 				"description": "produk ditampilkan berdasarkan uuid yang dipilih"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:5000/product/df174eaf-fdac-4fc0-98e4-63bac964d542",
+			"id": "7a5147f1-1938-4f1f-8540-1d5e75f5c410",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/product/df174eaf-fdac-4fc0-98e4-63bac964d542",
+				"description": "gambar product terhapus termasuk gambar dalam folder"
+			},
+			"response": []
 		}
 	]
 }
