@@ -71,24 +71,24 @@ export const getProductById = async (req, res) => {
 export const createProduct = (req, res) => {
     if(req.files === null) return res.status(400).json({msg: "No File Uploaded"});
     
-    const  price = req.body.price;
-    const  name = req.body.name;
-    const  stock = req.body.stock;
-    const  file = req.files.file;
-    const  fileSize = file.data.length;
-    const  ext = path.extname(file.name);
-    const  fileName = file.md5 + ext;
-    const  url = `${req.protocol}://${req.get("host")}/images/${fileName}`;
-    const  allowedType = ['.png','.jpg','.jpeg'];
+    const price = req.body.price;
+    const name = req.body.name;
+    const stock = req.body.stock;
+    const file = req.files.file;
+    const fileSize = file.data.length;
+    const ext = path.extname(file.name);
+    const fileName = file.md5 + ext;
+    const url = `${req.protocol}://${req.get("host")}/images/${fileName}`;
+    const allowedType = ['.png','.jpg','.jpeg'];
  
-    if(!allowedType.includes(ext.toLowerCase())) return res.status(422).json({msg: "Invalid Images"});
-    if(fileSize > 5000000) return res.status(422).json({msg: "Image must be less than 5 MB"});
+    if(!allowedType.includes(ext.toLowerCase())) return res.status(422).json({msg: "Format tidak sesuai"});
+    if(fileSize > 5000000) return res.status(422).json({msg: "gambar harus kurang dari 5 MB"});
  
     file.mv(`./public/images/${fileName}`, async(err)=>{
         if(err) return res.status(500).json({msg: err.message});
         try {
             await Product.create({ name: name, price: price, image: fileName, stock: stock,url: url, userId: req.userId });
-            res.status(200).json({msg: "Product Created Successfuly"});
+            res.status(200).json({msg: "Product telah ditambahkan"});
         } catch (error) {
             console.log(error.message);
         }
