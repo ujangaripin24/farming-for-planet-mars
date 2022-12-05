@@ -67,7 +67,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"James Hunt\", \n    \"email\": \"jameshunt01@gmail.com\", \n    \"password\": \"123456\", \n    \"confPassword\": \"123456\", \n    \"number\": \"0812345678\", \n    \"role\": \"user\"\n}\n",
+					"raw": "{\n    \"name\": \"Pratiwi Mahesa\", \n    \"email\": \"pratiwimahesa06@gmail.com\", \n    \"password\": \"123456\", \n    \"confPassword\": \"123456\", \n    \"number\": \"0812345678\", \n    \"role\": \"user\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
