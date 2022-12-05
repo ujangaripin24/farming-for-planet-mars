@@ -24,7 +24,7 @@
 					}
 				},
 				"url": "http://localhost:5000/login",
-				"description": "login telah berhasil"
+				"description": "login telah berhasil beserta notifikasi ke Gmail"
 			},
 			"response": []
 		},
