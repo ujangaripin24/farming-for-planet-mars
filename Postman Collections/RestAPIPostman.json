@@ -139,7 +139,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://localhost:5000/user/c69a091b-ae89-41bd-a685-dd8d908139d3",
+				"url": "http://localhost:5000/user/6a6d5800-f512-42d4-a9d6-c86474f3d377",
 				"description": "delete user oleh \"admin\" telah berhasil"
 			},
 			"response": []
