@@ -1,5 +1,8 @@
 import User from "../models/UserModel.js";
 import argon2 from "argon2";
+import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+dotenv.config();
 
 export const getUsers = async (req, res) => {
     try {
@@ -37,6 +40,28 @@ export const createUser = async (req, res) => {
             number: number,
             role: role
         });
+
+        const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+                user: process.env.EMAIL,
+                pass: process.env.PASSWORD,
+            },
+        });
+        const mailOptions = {
+            from: process.env.EMAIL,
+            to: email,
+            subject: "Register Telah Berhasil",
+            html: `<h1>Selamat Bergabung</h1>`,
+        };
+        transporter.sendMail(mailOptions, (err, info) => {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log(`Email sent: ${info.response}`);
+            }
+        });
+
         res.status(201).json({msg: "Registrasi Berhasil!!"});
     } catch (error){
         res.status(400).json(error);

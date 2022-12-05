@@ -95,8 +95,50 @@ export const createProduct = (req, res) => {
     })
 };
 
-export const updateProduct = (req, res) => {
-    
+export const updateProduct = async(req, res) => {
+    const product = await Product.findOne({
+        where: {
+            uuid: req.params.id
+        }
+    });
+    if (!product) return res.status(404).json({msg: "Data tidak ada"});
+    let fileName = "";
+    if (req.files === null) {
+        fillName = product.image
+    } else {
+        const price = req.body.price;
+        const name = req.body.name;
+        const stock = req.body.stock;
+        const file = req.files.file;
+        const fileSize = file.data.length;
+        const ext = path.extname(file.name);
+        const fileName = file.md5 + ext;
+        const url = `${req.protocol}://${req.get("host")}/images/${fileName}`;
+        const allowedType = ['.png','.jpg','.jpeg'];
+
+        if(!allowedType.includes(ext.toLowerCase())) return res.status(422).json({msg: "Format tidak sesuai"});
+        if(fileSize > 5000000) return res.status(422).json({msg: "gambar harus kurang dari 5 MB"});
+        
+        const filepath = `./public/images/${product.image}`;
+        fs.unlinkSync(filepath);
+
+        file.mv(`./public/images/${fileName}`, (err)=>{
+            if(err) return res.status(500).json({msg: err.message});
+        });
+    }
+    const name = req.body.title;
+    const url = `${req.protocol}://${req.get("host")}/images/${fileName}`;
+     
+    try {
+        await Product.update({ name: name, price: price, image: fileName, stock: stock,url: url, userId: req.userId },{
+            where:{
+                uuid: req.params.id
+            }
+        });
+        res.status(200).json({msg: "Product telah ditambahkan"});
+    } catch (error) {
+        console.log(error.message);
+    }
 }
 
 export const deleteProduct = async (req, res) => {
