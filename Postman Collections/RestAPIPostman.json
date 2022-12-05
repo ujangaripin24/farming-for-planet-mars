@@ -172,22 +172,22 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "product 1",
+							"value": "product 3",
 							"type": "text"
 						},
 						{
 							"key": "price",
-							"value": "10000",
+							"value": "1000",
 							"type": "text"
 						},
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/home/pratiwi/Downloads/ionic.png"
+							"src": "/home/pratiwi/Downloads/PT Maha Tandra.drawio.png"
 						},
 						{
 							"key": "stock",
-							"value": "10",
+							"value": "1000",
 							"type": "text"
 						}
 					]
