@@ -118,7 +118,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Fitria Firgantari\", \n    \"email\": \"ujangarifin06@gmail.com\", \n    \"password\": \"123456\", \n    \"confPassword\": \"123456\", \n    \"number\": \"089123123\", \n    \"role\": \"user\"\n}",
+					"raw": "{\n    \"name\": \"James Hunt\", \n    \"email\": \"jameshunt@gmail.com\", \n    \"password\": \"123456\", \n    \"confPassword\": \"123456\", \n    \"number\": \"089123123\", \n    \"role\": \"user\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
