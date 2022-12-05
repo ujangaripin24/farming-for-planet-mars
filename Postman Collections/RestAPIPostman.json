@@ -75,7 +75,7 @@
 					}
 				},
 				"url": "http://localhost:5000/user",
-				"description": "registrasi user baru"
+				"description": "registrasi user baru beserta notifikasi ke gmail"
 			},
 			"response": []
 		},
