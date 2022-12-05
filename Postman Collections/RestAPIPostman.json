@@ -172,7 +172,7 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "product 4",
+							"value": "product 5",
 							"type": "text"
 						},
 						{
@@ -183,11 +183,11 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/home/pratiwi/Downloads/repository-open-graph-template.png"
+							"src": "/home/pratiwi/Downloads/wasteapp-1.jpeg"
 						},
 						{
 							"key": "stock",
-							"value": "1000",
+							"value": "20",
 							"type": "text"
 						}
 					]
