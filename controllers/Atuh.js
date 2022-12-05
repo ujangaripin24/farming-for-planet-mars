@@ -1,5 +1,8 @@
 import User from "../models/UserModel.js";
 import argon2 from "argon2";
+import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+dotenv.config();
 
 export const Login = async(req, res) => {
     const user = await User.findOne({
@@ -15,6 +18,28 @@ export const Login = async(req, res) => {
     const name = user.name;
     const email = user.email;
     const role = user.role;
+
+    const transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD,
+        },
+    });
+    const mailOptions = {
+        from: process.env.EMAIL,
+        to: email,
+        subject: "Login Dari Perangkat",
+        html: `<h1>Anda Masuk Pada Perangkat</h1>`,
+    };
+    transporter.sendMail(mailOptions, (err, info) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(`Email sent: ${info.response}`);
+        }
+    });
+
     res.status(200).json({uuid, name, email, role});
 }
 
