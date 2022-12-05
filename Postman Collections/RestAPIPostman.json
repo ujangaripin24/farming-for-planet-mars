@@ -172,7 +172,7 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "product 3",
+							"value": "product 4",
 							"type": "text"
 						},
 						{
@@ -183,7 +183,7 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/home/pratiwi/Downloads/PT Maha Tandra.drawio.png"
+							"src": "/home/pratiwi/Downloads/repository-open-graph-template.png"
 						},
 						{
 							"key": "stock",
