@@ -224,6 +224,45 @@
 				"description": "gambar product terhapus termasuk gambar dalam folder"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:5000/product/02ef9ed7-0d48-4712-9b30-fec904c014fd",
+			"id": "6bbd7c5c-1362-4355-94dc-a73ac086b14a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "produck 2 updated",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/pratiwi/Downloads/ionic.png"
+						},
+						{
+							"key": "stock",
+							"value": "200",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:5000/product/02ef9ed7-0d48-4712-9b30-fec904c014fd",
+				"description": "update product error run time"
+			},
+			"response": []
 		}
 	]
 }
