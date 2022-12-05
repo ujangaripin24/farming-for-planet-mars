@@ -193,7 +193,7 @@
 					]
 				},
 				"url": "http://localhost:5000/product",
-				"description": "menambahkan data 'error' dari middleware AuthUser.js"
+				"description": "menambahkan data berhasil image adalah file dalam form name"
 			},
 			"response": []
 		},
