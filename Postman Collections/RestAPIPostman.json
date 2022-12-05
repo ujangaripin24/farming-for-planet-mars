@@ -181,9 +181,9 @@
 							"type": "text"
 						},
 						{
-							"key": "image",
+							"key": "file",
 							"type": "file",
-							"value": null
+							"src": "/home/pratiwi/Downloads/ionic.png"
 						},
 						{
 							"key": "stock",
