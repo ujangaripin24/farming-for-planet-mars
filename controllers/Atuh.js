@@ -30,7 +30,14 @@ export const Login = async(req, res) => {
         from: process.env.EMAIL,
         to: email,
         subject: "Login Dari Perangkat",
-        html: `<h1>Anda Masuk Pada Perangkat</h1>`,
+        text: `Anda telah Login`,
+        attachments: [
+            {
+                filename: 'login.html',
+                path: __dirname + '/login.html',
+                cid: 'uniq-login.html'
+            }
+        ]
     };
     transporter.sendMail(mailOptions, (err, info) => {
         if (err) {
