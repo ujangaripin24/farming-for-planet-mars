@@ -226,7 +226,7 @@ export const Login = async(req, res) => {
         if (err) {
             console.log(err);
         } else {
-            console.log(`Email sent: ${info.response}`);
+            console.log(`Email Terkirim: ${info.response}`);
         }
     });
 
@@ -253,3 +253,4 @@ export const logOut = (req, res) => {
         res.status(200).json({msg: "Anda telah logout"});
     });
 }
+// alert message

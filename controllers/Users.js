@@ -29,13 +29,15 @@ export const getUserById = async (req, res) => {
 }
 
 export const createUser = async (req, res) => {
+
+        const user = await User.findOne({
+            where : {
+                email: req.body.email
+            }
+        });
+        if (!user) return res.status(404).json({msg: "User sudah terdaftar"});
     const {name, email, password, confPassword, number, role} = req.body;
-    const user = await User.findOne({
-        where : {
-            email: req.body.email
-        }
-    });
-    if (!user) return res.status(404).json({msg: "User Sudah Terdaftar"});
+
     if (password !== confPassword) return res.status(400).json({msg: 'Password Tidak Sama!!'});
     const hashPassword = await argon2.hash(password);
     try{
