@@ -67,14 +67,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Pratiwi Mahesa\", \n    \"email\": \"pratiwimahesa06@gmail.com\", \n    \"password\": \"123456\", \n    \"confPassword\": \"123456\", \n    \"number\": \"0812345678\", \n    \"role\": \"user\"\n}\n",
+					"raw": "{\n    \"name\": \"Fajar Suahanna\", \n    \"email\": \"alhidayahkircon@gmail.com\", \n    \"password\": \"123456\", \n    \"confPassword\": \"123456\", \n    \"number\": \"0812345678\", \n    \"role\": \"user\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:5000/user",
+				"url": "http://localhost:5000/user/",
 				"description": "registrasi user baru beserta notifikasi ke gmail"
 			},
 			"response": []
