@@ -1,4 +1,4 @@
-#1. login
+#1. login for user
 ###
 POST http://localhost:5000/login
 Content-Type: application/json
@@ -8,11 +8,11 @@ Content-Type: application/json
     "password" : "123456"
 }
 
-#2. Status
+#2. Status for user
 ###
 GET http://localhost:5000/status
 
 
-#3. logout
+#3. logout for user
 ###
 DELETE http://localhost:5000/logout

@@ -1,4 +1,4 @@
-#1. Create User
+#1. Create User for register
 ###
 POST http://localhost:5000/user 
 Content-Type: application/json
@@ -12,7 +12,7 @@ Content-Type: application/json
     "role": "user"
 }
 
-#2. get all user
+#2. get all user for admin
 ###
 GET http://localhost:5000/users
 
